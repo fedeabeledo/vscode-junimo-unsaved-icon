@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://github.com/fedeabeledo/vscode-junimo-unsaved-icon/blob/main/assets/theme-junimo-icon-trimmed.png?raw=true" width="256" />
+</p>
 # junimo unsaved icon
 
 your unsaved icon will change to a junimo from the game stardew valley.
