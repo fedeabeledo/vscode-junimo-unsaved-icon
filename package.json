@@ -2,31 +2,45 @@
   "name": "junimo-unsaved-icon",
   "displayName": "junimo unsaved icon",
   "description": "change the unsaved icon for a junimo from stardew valley :p",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "publisher": "fefo",
+  "icon": "assets/theme-junimo-icon.png",
+  "galleryBanner": {
+    "color": "#000000",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.100.0"
   },
   "categories": [
-    "Other"
+    "Themes"
   ],
-  "activationEvents": [],
-  "main": "./extension.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fedeabeledo/vscode-junimo-unsaved-icon"
+  },
   "contributes": {
-    "commands": [{
-      "command": "junimo-unsaved-icon.helloWorld",
-      "title": "Hello World"
-    }]
+    "productIconThemes": [
+      {
+        "id": "junimo-unsaved-icon",
+        "label": "Junimo Unsaved File Icon Extension",
+        "path": "./theme/product-icon-theme.json"
+      }
+    ]
   },
   "scripts": {
-    "lint": "eslint .",
-    "pretest": "npm run lint",
-    "test": "vscode-test"
+    "updateFont": "node ./build/updateFont.js"
   },
   "devDependencies": {
     "@types/vscode": "^1.100.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
     "eslint": "^9.25.1",
+    "esbuild": "^0.25.3",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.8.3",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.5.2"
   }
