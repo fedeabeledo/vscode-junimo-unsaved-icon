@@ -1,0 +1,20 @@
+{
+	"fonts": [
+		{
+			"id": "junimo-unsaved-icon",
+			"src": [
+				{
+					"path": "./junimo.woff",
+					"format": "woff"
+				}
+			],
+			"weight": "normal",
+			"style": "normal",
+		}
+	],
+	"iconDefinitions": {
+		"circle-filled": {
+			"fontCharacter": "\\e000"
+		}
+	}
+}
